@@ -63,7 +63,7 @@ int main() {
     for (int i = 0; i < num; ++i) {
         fout << arr[i].print_to_file() << std::endl;
     }
-
+    delete[] arr;
     fin.close();
     fout.close();
     return 0;
